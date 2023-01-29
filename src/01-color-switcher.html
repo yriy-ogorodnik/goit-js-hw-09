@@ -6,11 +6,35 @@
     <title>Color switcher</title>
     <link rel="stylesheet" href="css/common.css" />
   </head>
+  <style>
+    .button {
+      padding: 15px 25px;
+      font-size: 24px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+
+      background-color: #cdd7d4;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+
+    .button:hover {
+      background-color: #a7f4aa;
+    }
+
+    .button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+  </style>
   <body>
     <p><a href="index.html">Go back</a></p>
 
-    <button type="button" data-start>Start</button>
-    <button type="button" data-stop>Stop</button>
+    <button class="button" type="button" data-start>Start</button>
+    <button class="button" type="button" data-stop>Stop</button>
 
     <script src="js/01-color-switcher.js" type="module"></script>
   </body>
